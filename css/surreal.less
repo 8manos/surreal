@@ -1,0 +1,116 @@
+@import 'vendor/normalize.less';
+@import 'elements.less';
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic);
+
+// Colores
+@blanco: #fff;
+@dark: #212121;
+@darker: darken(@dark, 10%);
+@negro: #010101;
+
+
+// Site
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+#cabeza {
+	background: @dark;
+	text-align: center;
+
+	a {
+		border-bottom: 1px solid lighten(@dark, 2%);
+		color: @blanco;
+		display: block;
+		padding: 4px;
+		text-decoration: none;
+	}
+
+	a:hover {
+		font-weight: bold;
+	}
+
+	h1 {
+		color: @blanco;
+		margin: 0;
+		padding: 0.1em 0 0.3em;
+		vertical-align: middle;
+	}
+
+	nav ul {
+		background: @darker;
+		font-size: 1.5em;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.toggle {
+		display: none;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		text-transform: uppercase;
+	}
+}
+
+#content {
+	a {
+		color: @negro;
+	}
+}
+
+	.js #cabeza {
+		nav {
+			max-height: 0;
+			overflow: hidden;
+			.transition( max-height, 0.4s, ease-in-out );
+		}
+
+		.toggle {
+			display: inline-block;
+		}
+	}
+
+	.show-menu #cabeza {
+		nav {
+			max-height: 150px;
+		}
+	}
+
+#footer {
+	text-align: center;
+}
+
+.grid {
+	list-style-type: none;
+	margin: 1em;
+	padding: 0;
+	text-align: center;
+
+	li {
+		.box-shadow( 0 0 5px rgba(0, 0, 0, 0.3));
+	}
+}
+
+@media only screen and (orientation : landscape ){
+	.grid {
+		li {
+			margin-bottom: 1em;
+			margin-left: 1%;
+			margin-right: 1%;
+			width: 30%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}

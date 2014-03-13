@@ -9,7 +9,10 @@ html.no-js
     #wraper
         != partial("_parts/header.jade")
         #content
-            != yield
+            if current.path[0] == 'comic'
+                != partial("comic/_index.jade")
+            else
+                != yield
         != partial("_parts/footer.jade")
 
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js")

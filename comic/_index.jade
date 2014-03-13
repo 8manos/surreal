@@ -5,7 +5,7 @@ article.comic(id=slug)
 
       each val,index in paginas
         li
-            img(src=slug+".img/"+index+".jpg")
+            img.lazyOwl(data-src=slug+".img/"+index+".jpg")
 
     .comic-description
         != yield

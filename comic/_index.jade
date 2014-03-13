@@ -1,5 +1,11 @@
-pre aqui la galeria
+article.comic(id=slug)
 
-h1= title
+    ul.paginas
+      - var paginas = []; for( var i=0; i < pages; i++ ){ paginas.push( i ) };
 
-!= yield
+      each val,index in paginas
+        li
+            img(src=slug+".img/"+index+".jpg")
+
+    .comic-description
+        != yield

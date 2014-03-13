@@ -2,5 +2,5 @@ ul.grid
     for comic in public.comic._data
         li 
             a.item(href="/comic/#{comic.slug}")
-                img(src="http://placehold.it/800x1100")
+                img(src="/comic/#{comic.slug}.img/0.jpg")
                 h2 #{comic.title}

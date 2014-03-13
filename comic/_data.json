@@ -1,26 +1,32 @@
 {
   "sweet-dreams-cafe": { 
   	"slug" : "sweet-dreams-cafe",
-    "title": "Sweet Dreams Café"
+    "title": "Sweet Dreams Café",
+    "pages": 9
   },
   "principios-universales": {
   	"slug" : "principios-universales",
-    "title": "Principios Universales"
+    "title": "Principios Universales",
+    "pages": 1
   },
   "animal-de-ciudad": {
   	"slug" : "animal-de-ciudad",
-  	"title": "Animal de Ciudad"
+  	"title": "Animal de Ciudad",
+    "pages": 1
   },
   "somos-diferentes": {
   	"slug" : "somos-diferentes",
-  	"title": "Somos Diferentes"
+  	"title": "Somos Diferentes",
+    "pages": 1
   },
   "un-truco-peligroso": {
-  	"slug" : "sun-truco-peligroso",
-  	"title": "Un Truco Peligroso"
+  	"slug" : "un-truco-peligroso",
+  	"title": "Un Truco Peligroso",
+    "pages": 1
   },
   "la-mancha": {
   	"slug" : "la-mancha",
-  	"title": "La Mancha"
+  	"title": "La Mancha",
+    "pages": 1
   }
 }

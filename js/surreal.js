@@ -11,11 +11,10 @@ $(document).on('ready', function(){
 	});
 
 	$(".owl-carousel").owlCarousel({
-		items : 1,
-		itemsDesktop: false,
-		itemsDesktopSmall: false,
-		itemsTablet: false,
-		itemsMobile: false
+		singleItem: true,
+		navigation: true,
+		paginationNumbers: true,
+		addClassActive: true
 	});
 
 	var owl = $(".owl-carousel").data('owlCarousel');

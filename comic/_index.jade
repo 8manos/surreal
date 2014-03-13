@@ -7,5 +7,21 @@ article.comic(id=slug)
         li
             img.lazyOwl(data-src=slug+".img/"+index+".jpg")
 
+      - var lanzamiento = new Date( proximo ).getTime();
+      - var ahora = new Date().getTime();
+      - var falta = lanzamiento - ahora;
+      - var restante = Math.ceil(falta/1000/60/60/24);
+
+      if restante > 0
+        
+        li.coming-soon
+            h3 Espera la próxima publicación de<br /><strong>#{title}</strong><br />en 
+                span= restante
+                case restante
+                  when 1
+                    |  día.
+                  default
+                    |  días.
+
     .comic-description
         != yield

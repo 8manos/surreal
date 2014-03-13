@@ -9,4 +9,14 @@ $(document).on('ready', function(){
 			$('body').addClass('show-menu');
 		}
 	});
+
+	$(".owl-carousel").owlCarousel({
+		items : 1,
+		itemsDesktop: false,
+		itemsDesktopSmall: false,
+		itemsTablet: false,
+		itemsMobile: false
+	});
+
+	var owl = $(".owl-carousel").data('owlCarousel');
 });

@@ -5,12 +5,13 @@ article.comic(id=slug)
 
       each val,index in paginas
         li
-            img.lazyOwl(data-src=slug+".img/"+index+".jpg")
+            a.zoom(href=slug+".img/"+index+".jpg")
+                img.lazyOwl(data-src=slug+".img/"+index+".jpg")
 
       - var lanzamiento = new Date( proximo ).getTime();
       - var ahora = new Date().getTime();
       - var falta = lanzamiento - ahora;
-      - var restante = Math.ceil(falta/1000/60/60/24);
+      - var restante = Math.ceil( falta/1000/60/60/24 );
 
       if restante > 0
         
@@ -25,3 +26,10 @@ article.comic(id=slug)
 
     .comic-description
         != yield
+
+    div#zoom-area
+        a.zoom-close(href="#") Cerrar
+
+        div.zoom-wrapper
+            div.image-wrapper
+                img(src="http://placehold.it/500x900");

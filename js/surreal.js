@@ -1,6 +1,4 @@
 $(document).on('ready', function(){
-	console.log("Starting...");
-
 
 	// Menu con toggle para quienes lo soportan
 	$('#cabeza .toggle').on( 'click', function(e){
@@ -41,6 +39,32 @@ $(document).on('ready', function(){
 		}
 	});
 
+	// Deshabilitamos click en imagenes y hacemos magia de zoom
+	var myScroll;
+	$('.zoom').on( 'click', function(e){
+		var full_img = $(this).attr("href");
+		$('#zoom-area .zoom-wrapper img').attr("src", full_img);
+		e.preventDefault();
+		$('#zoom-area').fadeIn( function(){
+			setTimeout(function(){
+				myScroll = new IScroll('.zoom-wrapper', {
+					zoom: true,
+					scrollX: true,
+					scrollY: true,
+					mouseWheel: true,
+					wheelAction: 'zoom'
+				});
+			}, 100 );
+		});
+	});
+
+	$('.zoom-close').on( 'click', function(e){
+		e.preventDefault();
+		$('#zoom-area').fadeOut( function(){
+			myScroll.destroy();
+			myScroll = null;
+		});
+	});
 
 	// Escuchamos cambios en el hash
 	var hashTimeout; 

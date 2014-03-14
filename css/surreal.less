@@ -129,6 +129,45 @@ img {
 	}
 }
 
+#zoom-area {
+	background: @negro;
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+
+	.zoom-close {
+		color: @blanco;
+		display: inline-block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 1000;
+	}
+
+	.zoom-wrapper {
+		height: 100%;
+		width: 100%;
+		margin: 0.3em;
+		overflow: hidden;
+
+		img {
+			max-width: none;
+			max-height: none;
+			-webkit-transform-origin:50% 50%;
+			   -moz-transform-origin:50% 50%;
+			    -ms-transform-origin:50% 50%;
+			     -o-transform-origin:50% 50%;
+        			transform-origin:50% 50%;
+		}
+	}
+}
+
 .coming-soon {
 	padding: 3em 6em;
 

@@ -1,6 +1,7 @@
 ul.grid
     for comic in public.comic._data
         li 
+            - var encoded = encodeURIComponent( uri+"/comic/"+comic.slug+".img/0.jpg" );
             a.item(href="/comic/#{comic.slug}")
-                img(src="/comic/#{comic.slug}.img/0.jpg")
+                img(src="http://imgsizer.herokuapp.com/600/1000/#{encoded}")
                 h2 #{comic.title}

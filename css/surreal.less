@@ -1,4 +1,5 @@
 @import 'vendor/normalize.less';
+@import 'vendor/owl.less';
 @import 'elements.less';
 @import 'fonts/icons.less';
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic);
@@ -128,6 +129,60 @@ img {
 	}
 }
 
+#zoom-area {
+	background: @negro;
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+
+	.zoom-close {
+		color: @blanco;
+		display: inline-block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 1000;
+	}
+
+	.zoom-wrapper {
+		height: 100%;
+		width: 100%;
+		margin: 0.3em;
+		overflow: hidden;
+
+		img {
+			-webkit-transform-origin:50% 50%;
+			   -moz-transform-origin:50% 50%;
+			    -ms-transform-origin:50% 50%;
+			     -o-transform-origin:50% 50%;
+        			transform-origin:50% 50%;
+		}
+	}
+}
+
+.coming-soon {
+	padding: 3em 6em;
+
+	h3 {
+		font-size: 2.2em;
+
+		span {
+			font-size: 1.6em;
+			font-weight: bold;
+		}
+
+		strong {
+			font-size: 1.3em;
+		}
+	}
+}
+
 .grid {
 	list-style-type: none;
 	margin: 1em;
@@ -169,6 +224,24 @@ img {
 	}
 }
 
+@media only screen and (min-width : 660px ) and (orientation : portrait ){
+	.grid {
+		li {
+			width: 45%;
+			margin-left: 1%;
+			margin-right: 1%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+
 .visually-hidden {
 	display: none;
+}
+
+/* Owl */
+.owl-item img,
+.owl-wrapper {
+	max-height: 100%;
 }

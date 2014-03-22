@@ -4,6 +4,20 @@
 @import 'fonts/icons.less';
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic);
 
+@font-face {
+    font-family: 'bebasregular';
+    src: url('fonst/BEBAS___-webfont.eot');
+    src: url('fonst/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonst/BEBAS___-webfont.woff') format('woff'),
+         url('fonst/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonst/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 // Colores
 @blanco: #fff;
 @dark: #212121;
@@ -18,7 +32,7 @@ a {
 
 body {
 	background: darken(@blanco, 3%);
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'bebasregular', sans-serif;
 }
 
 img {
@@ -28,28 +42,46 @@ img {
 
 #cabeza {
 	.box-shadow(0 0 7px rgba(0,0,0,1));
-	background: @dark;
+	background: lighten(@dark, 20%);
 	overflow: hidden;
 	text-align: left;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 
 	a {
-		border-bottom: 1px solid lighten(@dark, 2%);
-		color: @blanco;
+		color: @negro;
 		display: block;
 		padding: 4px;
+		letter-spacing: 0.2px;
 		text-decoration: none;
+		text-shadow: 0 0 1px #fff;
 	}
 
 	a:hover {
+		color: @blanco;
 		font-weight: bold;
+		text-shadow: 0 0 1px #000;
 	}
 
 	h1 {
 		color: @blanco;
 		display: inline-block;
 		margin: 0;
-		padding: 0.1em 0 0.3em;
+		padding: 0.3em 0 0 0;
 		vertical-align: middle;
+
+		a {
+			background-image: url(../touch-icon-ipad-retina.png);
+			background-position: left 50%;
+			background-size: 40px 40px;
+			background-repeat: no-repeat;
+			display: block;
+			padding-left: 46px;
+			margin-left: 10px ;
+			padding-top: 3px;
+		}
 	}
 
 	nav {
@@ -62,6 +94,10 @@ img {
 			margin: 0;
 			padding: 0;
 			text-align: center;
+
+			a {
+				color: #ccc;
+			}
 		}
 	}
 
@@ -74,7 +110,7 @@ img {
 		font-size: 2em;
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 12px 16px 0 0;
+		padding: 0px 16px 0 0;
 		border-left: 1px solid lighten(@dark, 10%);
 		vertical-align: middle;
 	}
@@ -91,6 +127,8 @@ img {
 }
 
 #content {
+	padding-top: 57px;
+
 	a {
 		color: @negro;
 	}

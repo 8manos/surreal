@@ -75,6 +75,7 @@ $(document).on('ready', function(){
 		// Inicializamos carousel
 		$(".owl-carousel").owlCarousel({
 			lazyLoad: true,
+			lazyFollow: true,
 			singleItem: true,
 			paginationNumbers: true,
 			addClassActive: true,
@@ -90,13 +91,41 @@ $(document).on('ready', function(){
 
 		// Mapeamos controles de teclado
 		$(document).keydown(function(e){
-			if (e.keyCode == 37) { 
-			   owl.prev();
+			
+			if ( e.keyCode == 37 ) { // Flecha Atras
+				if( $('#zoom-area').is(":visible") ){
+					$('.zoom-close').click();	
+					owl.prev();
+					$('.active a').click();
+				}else{
+					owl.prev();
+				}
+				return false;
+			}
+			
+			if ( e.keyCode == 39 ) { // Flecha Adelante
+				if( $('#zoom-area').is(":visible") ){
+					$('.zoom-close').click();
+					owl.next();
+					$('.active a').click();	
+				}else{
+					owl.next();
+				}
+				return false;
+			}
+			
+			if ( e.keyCode == 13 || e.keyCode == 32 ) { // Enter o Spacebar
+			   $('.active a').click();
 			   return false;
 			}
-			if (e.keyCode == 39) { 
-			   owl.next();
-			   return false;
+
+			if ( e.keyCode == 27 ) { // ESC
+
+				if( $('#zoom-area').is(":visible") ){
+					$('.zoom-close').click();	
+				}
+			   
+				return false;
 			}
 		});
 

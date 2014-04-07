@@ -8,7 +8,7 @@ article.comic(id=slug)
             a.zoom(href=slug+".img/"+index+".jpg")
                 - var imagen = uri+"/comic/"+slug+".img/"+index+".jpg";
                 - var encoded = encodeURIComponent( imagen );
-                img.lazyOwl(src="http://imgsizer.8cdn.co/320/750/#{encoded}", data-src="http://imgsizer.8cdn.co/xx/yy/#{encoded}", data-imagen="#{imagen}")
+                img.lazyOwl( data-src="http://imgsizer.8cdn.co/xx/yy/#{encoded}", data-imagen="#{imagen}" )
 
       - var lanzamiento = new Date( proximo ).getTime();
       - var ahora = new Date().getTime();

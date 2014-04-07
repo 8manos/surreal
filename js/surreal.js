@@ -5,7 +5,7 @@ $(document).on('ready', function(){
 	var pixel_ratio = window.devicePixelRatio || 1;
 
 	function medidas(){
-		pantalla_alto = $(window).height() - $('#cabeza').height(),
+		pantalla_alto = $(window).height() - $('#cabeza').height() - $('owl-controls').outerHeight(),
 		pantalla_ancho = $(window).width();
 
 	}
@@ -79,6 +79,8 @@ $(document).on('ready', function(){
 			singleItem: true,
 			paginationNumbers: true,
 			addClassActive: true,
+			navigation: true,
+			autoHeight: false,
 			afterInit: function() { setTimeout( paginaCompleta , 250); },
 			afterMove: function( slide ){ 
 				// Modificamos el hash para cada pagina
@@ -91,8 +93,8 @@ $(document).on('ready', function(){
 
 		// Mapeamos controles de teclado
 		$(document).keydown(function(e){
-			
-			if ( e.keyCode == 37 ) { // Flecha Atras
+
+			if ( e.keyCode == 37 || e.keyCode == 38 ) { // Flecha Atras o Arriba
 				if( $('#zoom-area').is(":visible") ){
 					$('.zoom-close').click();	
 					owl.prev();
@@ -102,8 +104,8 @@ $(document).on('ready', function(){
 				}
 				return false;
 			}
-			
-			if ( e.keyCode == 39 ) { // Flecha Adelante
+
+			if ( e.keyCode == 39 || e.keyCode == 40 ) { // Flecha Adelante o Abajo
 				if( $('#zoom-area').is(":visible") ){
 					$('.zoom-close').click();
 					owl.next();
@@ -113,7 +115,7 @@ $(document).on('ready', function(){
 				}
 				return false;
 			}
-			
+
 			if ( e.keyCode == 13 || e.keyCode == 32 ) { // Enter o Spacebar
 			   $('.active a').click();
 			   return false;

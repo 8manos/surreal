@@ -13,7 +13,6 @@ $(document).on('ready', function(){
 	// Inicializamos carousel
 	$(".owl-carousel").owlCarousel({
 		lazyLoad: true,
-		lazyFollow: true,
 		singleItem: true,
 		paginationNumbers: true,
 		addClassActive: true,

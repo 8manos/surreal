@@ -2,17 +2,18 @@ $(document).on('ready', function(){
 	// Medidas
 	var pantalla_alto, pantalla_ancho;
 
+	var pixel_ratio = window.devicePixelRatio || 1;
+
 	function medidas(){
 		pantalla_alto = $(window).height() - $('#cabeza').height(),
 		pantalla_ancho = $(window).width();
 
-		console.log( pantalla_ancho, pantalla_alto );
 	}
 	medidas();
 
 	// Configuramos fuentes segun pantalla
 	$('img.lazyOwl').each(function (i) {
-		var img_medida = $(this).data('src').replace("/xx/", "/"+pantalla_ancho+"/").replace("/yy/", "/"+pantalla_alto+"/");
+		var img_medida = $(this).data('src').replace("/xx/", "/"+pantalla_ancho*pixel_ratio+"/").replace("/yy/", "/"+pantalla_alto*pixel_ratio+"/");
 		$(this).data('src', img_medida );
 	});
 

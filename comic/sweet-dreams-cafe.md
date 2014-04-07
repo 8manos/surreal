@@ -1,7 +1,7 @@
-Esto es
-====
+Sweet Dreams Café
+===
 
-**Sweet**
+Cómic futurista, inspirado en cyber-punk y robótica.
 
-1. uno
-2. dos
+Ilustrado por Julián Naranjo
+Escrito por OthrO

@@ -1,1 +1,44 @@
-h1 CREADORES
+.single
+  h1 CREADORES
+
+  ul
+    for creador in public.creadores._data
+      li 
+        h2 #{creador.name}
+        p #{creador.resumen}
+
+        ul.redes
+
+          - if(creador.email)
+              li.flaticon-email20 
+                a(href="mailto:#{creador.email}") #{creador.email}
+          
+          - if(creador.linkedin)
+              li.flaticon-linkedin11 
+                a(href="#{creador.linkedin}", target="_blank") LinkedIn
+
+          - if(creador.twitter)
+              li.flaticon-social 
+                a(href="https://twitter.com/#{creador.twitter}", target="_blank") #{creador.twitter}
+
+          - if(creador.facebook)
+              li.flaticon-facebook12 
+                a(href="https://facebook.com/#{creador.facebook}", target="_blank") #{creador.facebook}
+
+          - if(creador.flickr)
+              li.flaticon-flickr10 
+                a(href="https://flickr.com/photos/#{creador.flickr}", target="_blank") #{creador.flickr}
+
+          - if(creador.blog)
+              li.flaticon-rss24
+                a(href="#{creador.blog}", target="_blank") #{creador.blog}
+
+          - if(creador.vimeo)
+              li.flaticon-vimeo3 
+                a(href="https://vimeo.com/#{creador.vimeo}", target="_blank") #{creador.vimeo}
+
+          - if(creador.youtube)
+              li.flaticon-youtube18 
+                a(href="https://youtube.com/#{creador.youtube}", target="_blank") #{creador.youtube}
+
+        

@@ -1,8 +1,20 @@
 {
   "otro": { 
-  	"slug" : "sweet-dreams-cafe",
-    "title": "Sweet Dreams Café",
-    "proximo": "2014-03-15",
-    "pages": 14
+    "name": "Othro",
+    "resumen": "El patrón del mal",
+    "email": "info@surrealcomics.org",
+    "linkedin" : "http://linkedin.com/",
+    "twitter": "othro",
+    "facebook": "otro",
+    "flickr": "otro",
+    "blog" : "http://otro.gathacol.net",
+    "vimeo" : "otro",
+    "youtube" : "otro"
+  },
+  "8manos": {
+    "name": "8manos",
+    "resumen": "One million monkeys and a code editor",
+    "email": "info@8manos.com",
+    "twitter": "8manos"
   }
 }

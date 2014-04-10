@@ -136,7 +136,8 @@ $(document).on('ready', function(){
 		// Vamos a pagina solicitada al comienzo
 		if( location.hash ){
 			var pagina = location.hash.replace('#page-','');
-			owl.jumpTo( pagina)
+			location.hash = '';
+			setTimeout( owl.goTo( pagina), 100 );
 		}
 		
 		$(window).on( 'resize', function () {

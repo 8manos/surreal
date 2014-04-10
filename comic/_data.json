@@ -3,36 +3,42 @@
   	"slug" : "sweet-dreams-cafe",
     "title": "Sweet Dreams Café",
     "proximo": "2014-03-15",
-    "pages": 9
+    "pages": 14
   },
   "principios-universales": {
   	"slug" : "principios-universales",
     "title": "Principios Universales",
-    "proximo": "2014-12-31",
-    "pages": 1
+    "proximo": "2013-12-31",
+    "pages": 11
   },
   "animal-de-ciudad": {
   	"slug" : "animal-de-ciudad",
   	"title": "Animal de Ciudad",
-    "proximo": "2014-12-31",
-    "pages": 1
+    "proximo": "2013-12-31",
+    "pages": 25
   },
   "somos-diferentes": {
   	"slug" : "somos-diferentes",
   	"title": "Somos Diferentes",
-    "proximo": "2014-12-31",
-    "pages": 1
+    "proximo": "2013-12-31",
+    "pages": 10
   },
   "un-truco-peligroso": {
   	"slug" : "un-truco-peligroso",
   	"title": "Un Truco Peligroso",
-    "proximo": "2014-12-31",
-    "pages": 1
+    "proximo": "2013-12-31",
+    "pages": 18
   },
   "la-mancha": {
   	"slug" : "la-mancha",
   	"title": "La Mancha",
-    "proximo": "2014-12-31",
-    "pages": 1
+    "proximo": "2013-12-31",
+    "pages": 8
+  },
+  "unas-largas": {
+    "slug" : "unas-largas",
+    "title": "Uñas Largas",
+    "proximo": "2013-12-31",
+    "pages": 4
   }
 }

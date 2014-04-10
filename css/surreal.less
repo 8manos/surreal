@@ -13,7 +13,17 @@
          url('fonts/BEBAS___-webfont.svg#bebasregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -32,7 +42,16 @@ a {
 
 body {
 	background: darken(@blanco, 3%);
-	font-family: 'bebasregular', sans-serif;
+	font-family: 'bebas_neueregular', sans-serif;
+}
+
+h1 ,
+h2 ,
+h3 ,
+h4 ,
+h5 ,
+h6 {
+	font-weight: normal;
 }
 
 img {

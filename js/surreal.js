@@ -5,7 +5,7 @@ $(document).on('ready', function(){
 	var pixel_ratio = window.devicePixelRatio || 1;
 
 	function medidas(){
-		pantalla_alto = $(window).height() - $('#cabeza').height() - $('owl-controls').outerHeight(),
+		pantalla_alto = $(window).height() - $('#cabeza').height() - 45,
 		pantalla_ancho = $(window).width();
 
 	}

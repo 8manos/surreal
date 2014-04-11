@@ -26,6 +26,44 @@
     font-style: normal;
 }
 
+// Pruebas
+@font-face {
+    font-family: 'ikusuteitoregular';
+    src: url('fonts/ikusuteito.eot');
+    src: url('fonts/ikusuteito.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ikusuteito.woff') format('woff'),
+         url('fonts/ikusuteito.ttf') format('truetype'),
+         url('fonts/ikusuteito.svg#ikusuteitoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dj_grossnormal';
+    src: url('fonts/djgross.eot');
+    src: url('fonts/djgross.eot?#iefix') format('embedded-opentype'),
+         url('fonts/djgross.woff') format('woff'),
+         url('fonts/djgross.ttf') format('truetype'),
+         url('fonts/djgross.svg#dj_grossnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rawengulksansregular';
+    src: url('fonts/rawengulksans-094.eot');
+    src: url('fonts/rawengulksans-094.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rawengulksans-094.woff') format('woff'),
+         url('fonts/rawengulksans-094.ttf') format('truetype'),
+         url('fonts/rawengulksans-094.svg#rawengulksansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+// Fin Pruebas
+
 
 
 // Colores
@@ -42,7 +80,8 @@ a {
 
 body {
 	background: darken(@blanco, 3%);
-	font-family: 'bebas_neueregular', sans-serif;
+	font-family: 'rawengulksansregular';
+	letter-spacing: 1px;
 }
 
 h1 ,
@@ -51,6 +90,7 @@ h3 ,
 h4 ,
 h5 ,
 h6 {
+	font-family: 'bebas_neueregular', sans-serif;
 	font-weight: normal;
 }
 
@@ -152,6 +192,7 @@ img {
 	}
 
 	.comic-description {
+		font-size: 1.15em;
 		padding: 0 3em 3em;
 	}
 
@@ -228,6 +269,30 @@ img {
 	}
 }
 
+#flechas {
+	padding: 0 3em 8em;
+
+	a {
+		display: block;
+		background-image: url(../img/prev.svg);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: 64px 64px;
+		font-size: 0;
+		color: transparent;
+		width: 70px;
+		height: 70px;
+	}
+
+	#anterior {
+		float: left;
+	}
+	#siguiente { 
+		float:  right; 
+		background-image: url(../img/next.svg);
+	}
+}
+
 	.js #cabeza {
 		nav {
 			max-height: 0;
@@ -284,7 +349,7 @@ img {
 }
 
 #zoom-area {
-	background: @negro;
+	background: white;
 	display: none;
 	height: 100%;
 	left: 0;
@@ -296,8 +361,10 @@ img {
 	z-index: 100;
 
 	.zoom-close {
-		color: @blanco;
+		color: #000;
 		display: inline-block;
+		font-family: 'bebas_neueregular', sans-serif;
+		font-size: 1.3em;
 		position: absolute;
 		right: 20px;
 		top: 20px;
@@ -359,6 +426,10 @@ img {
 	}
 }
 
+.owl-theme .owl-controls {
+	margin-top: 0;
+}
+
 .owl-theme .owl-controls .owl-buttons div {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -381,6 +452,20 @@ img {
 	background-image: url(../img/next.svg);
 	left: auto;
 	right: 0;
+}
+
+.owl-theme .owl-controls .owl-pagination {
+	padding: 0 3em;
+}
+
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+	color: #000;
+	background-color: transparent;
+	font-family: 'dj_grossnormal';
+	font-size: 1.5em;
+	height: 30px;
+	margin: 5px 0 0;
+	padding: 2px 8px;
 }
 
 .paginas {

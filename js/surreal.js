@@ -148,6 +148,19 @@ $(document).on('ready', function(){
 			scrollTimeout = setTimeout( paginaCompleta , 150);
 		});
 
+		// Flechas en Zoom
+		$('#anterior').on('click', function(){
+			$('.zoom-close').click();
+			owl.prev();
+			$('.active a').click();	
+		});
+
+		$('#siguiente').on('click', function(){
+			$('.zoom-close').click();
+			owl.next();
+			$('.active a').click();	
+		});
+
 		// Escuchamos cambios en el hash
 		var hashTimeout; 
 		$(window).on( "hashchange", function( event ) {

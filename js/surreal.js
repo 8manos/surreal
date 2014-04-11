@@ -85,7 +85,7 @@ $(document).on('ready', function(){
 			afterMove: function( slide ){ 
 				// Modificamos el hash para cada pagina
 				setTimeout( function(){
-					location.hash = "page-" + $('.owl-item.active').index();
+					location.hash = "pg-" + $('.owl-item.active').index();
 				}, 10 );
 			}
 		});
@@ -135,7 +135,7 @@ $(document).on('ready', function(){
 
 		// Vamos a pagina solicitada al comienzo
 		if( location.hash ){
-			var pagina = location.hash.replace('#page-','');
+			var pagina = location.hash.replace('#pg-','');
 			location.hash = '';
 			setTimeout( owl.goTo( pagina), 100 );
 		}
@@ -157,7 +157,7 @@ $(document).on('ready', function(){
 			}
 
 			hashTimeout = setTimeout( function(){
-				var pagina = location.hash.replace('#page-','');
+				var pagina = location.hash.replace('#pg-','');
 				owl.goTo( parseInt(pagina) );
 			}, 10 );
 		});

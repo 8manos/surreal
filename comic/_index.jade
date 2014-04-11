@@ -11,9 +11,9 @@ article.comic(id=slug)
                 img.lazyOwl( data-src="http://imgsizer.8cdn.co/xx/yy/#{encoded}", data-imagen="#{imagen}" )
 
       - var lanzamiento = new Date( proximo ).getTime();
-      - var ahora = new Date().getTime();
-      - var falta = lanzamiento - ahora;
-      - var restante = Math.ceil( falta/1000/60/60/24 );
+      - var ahora       = new Date().getTime();
+      - var falta       = lanzamiento - ahora;
+      - var restante    = Math.ceil( falta/1000/60/60/24 );
 
       if restante > 0
         

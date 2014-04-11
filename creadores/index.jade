@@ -4,7 +4,7 @@
   ul.creadores
     for creador in public.creadores._data
       li.clearfix 
-        img(src="http://placehold.it/500x500", title="#{creador.img}")
+        img(src="img/#{creador.img}.jpg", title="#{creador.img}")
 
         h2 #{creador.name}
         p #{creador.resumen}
@@ -13,7 +13,7 @@
 
           - if(creador.email)
               li.flaticon-email20 
-                a(href="mailto:#{creador.email}") #{creador.email}
+                a(href="mailto:#{creador.email}", target="_blank") #{creador.email}
           
           - if(creador.linkedin)
               li.flaticon-linkedin11 

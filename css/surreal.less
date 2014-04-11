@@ -151,10 +151,16 @@ img {
 		color: @negro;
 	}
 
+	.comic-description {
+		padding: 3em;
+	}
+
 	.creadores {
 		padding: 0;
 		list-style-type: none;
-		li {
+		> li {
+			background-color: white;
+			padding: 1em;
 			margin-bottom: 4em;
 		}
 
@@ -199,11 +205,31 @@ img {
 #footer {
 	background: @dark;
 	color: @blanco;
-	padding: 4px 0;
-	text-align: center;
+	padding: 4px 1em;
+	position: relative;
+	text-align: left;
+
+	.redes-propias {
+		position: absolute;
+		right: 15px;
+		top: 3px;
+
+		a {
+			color: white;
+		}
+
+		a:before {
+			margin: 0;
+			width: 20px;
+		}
+	}
 
 	p {
 		margin: 0;
+
+		img {
+			margin-right: 5px;
+		}
 	}
 }
 
@@ -293,9 +319,10 @@ img {
 	font-size: 0;
 	color: transparent;
 	border-radius: 0;
+	display: none;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: -57px;
 	height: 100%;
 	width: 40px;
 }
@@ -356,6 +383,12 @@ img {
 			font-size: 18px;
 		}
 
+	}
+}
+
+@media only screen and ( min-width: 900px ) { 
+	.owl-theme .owl-controls .owl-buttons div {
+		display: block;
 	}
 }
 

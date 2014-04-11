@@ -1,48 +1,55 @@
 {
   "andrea": { 
     "name": "Andrea Lucio",
-    "resumen": "Ilustradora de La Mancha, Somos Diferentes y Principios Universales",
+    "resumen": "Ilustradora de [La Mancha](/comic/la-mancha), [Somos Diferentes](/comic/somos-diferentes) y [Principios Universales](/comic/principios-universales)",
     "email": "andrea@surrealcomics.org",
     "twitter": "Conntrax",
-    "facebook": "Andrea Lucio",
+    "facebook": "andrea.lucio.58",
     "blog" : "http://ydijo.wordpress.com/",
     "img" : "andrea"
   },
   "erzebet": { 
     "name": "Erzebet Art",
-    "resumen": "Ilustradora de Animal de Ciudad",
+    "resumen": "Ilustradora de [Animal de Ciudad](/comic/animal-de-ciudad)",
     "email": "erzebet@surrealcomics.org",
-    "facebook": "Erzebet Art",
+    "facebook": "Erzebet.Art",
     "img" : "erzebet"
+  },
+    "felipe": { 
+    "name": "Felipe González Corredor",
+    "resumen": "Ilustrador de [Un Truco Peligroso](/comic/un-truco-peligroso)",
+    "email": "fillias@surrealcomics.org",
+    "facebook": "felipe.gonzalezcorredor",
+    "blog": "[Portafolio de arte](http://fillias84.blogspot.com/)",
+    "img" : "felipe"
   },
   "julian": { 
     "name": "Julián Naranjo",
-    "resumen": "Ilustrador de Sweet Dreams Café",
+    "resumen": "Ilustrador de [Sweet Dreams Café](/comic/sweet-dreams-cafe)",
     "email": "julian@surrealcomics.org",
-    "facebook": "Julian Naranjo",
+    "facebook": "juliandavid.naranjomorales",
     "img" : "julian"
   },
   "camilo": { 
     "name": "Camilo Aguirre",
-    "resumen": "Ilustrador de Uñas Largas",
+    "resumen": "Ilustrador de [Uñas Largas](/comic/unas-largas)",
     "email": "camilo@surrealcomics.org",
-    "facebook": "Camilo Aguirre",
-    "blog" : "http://www.elgloboscopio.com/",
-    "blog" : "http://ceavhistorietas.blogspot.com/",
+    "facebook": "cagva",
+    "blog" : "[El Globoscopio](http://www.elgloboscopio.com/)",
+    "blog" : "[CEAV historietas](http://ceavhistorietas.blogspot.com/)",
     "img" : "camilo"
   },
   "othro": { 
     "name": "othro",
     "resumen": "Guionista y editor",
     "email": "othro@surrealcomics.org",
-    "facebook": "othro",
     "img" : "othro"
   },
   "8manos": {
     "name": "8manos",
     "resumen": "Visionarios de la web",
     "email": "info@8manos.com",
-    "twitter": "@8manos",
+    "twitter": "8manos",
     "img" : "8manos"
   }
 }

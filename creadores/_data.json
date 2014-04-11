@@ -1,42 +1,48 @@
 {
-  "Andrea": { 
+  "andrea": { 
     "name": "Andrea Lucio",
     "resumen": "Ilustradora de La Mancha, Somos Diferentes y Principios Universales",
     "email": "andrea@surrealcomics.org",
     "twitter": "Conntrax",
     "facebook": "Andrea Lucio",
     "blog" : "http://ydijo.wordpress.com/",
+    "img" : "andrea"
   },
-    "Erzebet": { 
+  "erzebet": { 
     "name": "Erzebet Art",
     "resumen": "Ilustradora de Animal de Ciudad",
     "email": "erzebet@surrealcomics.org",
     "facebook": "Erzebet Art",
+    "img" : "erzebet"
   },
-  "Julian": { 
+  "julian": { 
     "name": "Julián Naranjo",
     "resumen": "Ilustrador de Sweet Dreams Café",
     "email": "julian@surrealcomics.org",
     "facebook": "Julian Naranjo",
+    "img" : "julian"
   },
-  "Camilo": { 
+  "camilo": { 
     "name": "Camilo Aguirre",
     "resumen": "Ilustrador de Uñas Largas",
     "email": "camilo@surrealcomics.org",
     "facebook": "Camilo Aguirre",
     "blog" : "http://www.elgloboscopio.com/",
     "blog" : "http://ceavhistorietas.blogspot.com/",
+    "img" : "camilo"
   },
   "othro": { 
     "name": "othro",
     "resumen": "Guionista y editor",
     "email": "othro@surrealcomics.org",
-    "facebook": "othro"
+    "facebook": "othro",
+    "img" : "othro"
   },
   "8manos": {
     "name": "8manos",
     "resumen": "Visionarios de la web",
     "email": "info@8manos.com",
-    "twitter": "@8manos"
+    "twitter": "@8manos",
+    "img" : "8manos"
   }
 }

@@ -1,9 +1,11 @@
 .single
   h1 CREADORES
 
-  ul
+  ul.creadores
     for creador in public.creadores._data
-      li 
+      li.clearfix 
+        img(src="http://placehold.it/500x500", title="#{creador.img}")
+
         h2 #{creador.name}
         p #{creador.resumen}
 

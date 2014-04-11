@@ -26,6 +26,21 @@ article.comic(id=slug)
                   default
                     |  días.
 
+    .compartir
+      ul.compartir-redes
+        li
+          a.twitter.flaticon-social(href="http://twitter.com", title="Twitter", onclick='window.open(\'https://twitter.com/share?url=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'share-dialog\', \'width=550,height=450\'); return false;') 
+        li
+          a.facebook.flaticon-facebook12(href="http://facebook.com", title="Facebook", onclick='window.open(\'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'facebook-share-dialog\', \'width=626,height=436\'); return false;') 
+        li
+          a.tumblr.flaticon-share12(href="http://tumblr.com", title="Tumblr", onclick='window.open(\'http://www.tumblr.com/share/link/?url=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'share-dialog\', \'width=550,height=450\'); return false;') 
+        li
+          a.reddit.flaticon-like18(href="http://reddit.com", title="Reddit", onclick='window.open(\'http://www.reddit.com/submit?url=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'share-dialog\', \'width=550,height=450\'); return false;') 
+        li
+          a.stumbleupon.flaticon-hourglass1(href="http://stumbleupon.com", title="StumbleUpon", onclick='window.open(\'http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'share-dialog\', \'width=550,height=450\'); return false;') 
+
+      h4 Compartir
+
     .comic-description
         != yield
 
@@ -34,4 +49,4 @@ article.comic(id=slug)
 
         div.zoom-wrapper
             div.image-wrapper
-                img(src="http://placehold.it/500x900");
+                img(src="http://placehold.it/500x900")

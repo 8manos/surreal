@@ -1,10 +1,11 @@
 language: node_js
 node_js:
+- '0.11'
 - '0.10'
 deploy:
   provider: heroku
   api_key:
-    secure: J7NzHuhm2r4TOWKthzXHKa4ZYFZQ9YuyNgFv3A/jN9pusn5P1zWAqrDYFSvE8+oKy41DTy8TAzAsNXc9GQSvpbvY6R4hE4tUGm/Vkg9IafI7wc1b7B8e/SvqGTn9kmOM7Pvc3JfycyDEvCDosPDm36JIwDRAxowGt0O7icR1XIA=
+    secure: mW4lwuE30Jcsv97U1jRRqb8gpSDv+H/kXn8tY+4w/pesJyOuUjY+odmeAi18KCh5trXrWsqDOQVXb2fFmJV3pUWxcbolkE6xcJmsQqLV05XHsHRQRuKc3L2hAtPXi2FI5fOjoORjwTKYmC66/e13QAd7VwH9BGEV975QN3j+5lQ=
   app: surrealcomics
   on:
     repo: 8manos/surreal

@@ -1,4 +1,10 @@
- language: node_js
-
- node_js:
-   - "0.10"
+language: node_js
+node_js:
+- '0.10'
+deploy:
+  provider: heroku
+  api_key:
+    secure: J7NzHuhm2r4TOWKthzXHKa4ZYFZQ9YuyNgFv3A/jN9pusn5P1zWAqrDYFSvE8+oKy41DTy8TAzAsNXc9GQSvpbvY6R4hE4tUGm/Vkg9IafI7wc1b7B8e/SvqGTn9kmOM7Pvc3JfycyDEvCDosPDm36JIwDRAxowGt0O7icR1XIA=
+  app: surreal
+  on:
+    repo: 8manos/surreal

@@ -1,7 +1,7 @@
 {
   "globals": {
     "title": "Surreal Comics",
-    "uri": "http://surrealcomics.herokuapp.com",
+    "uri": "http://www.surrealcomics.org",
     "imgsizer": "http://imagesizer.herokuapp.com"
   }
 }

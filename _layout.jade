@@ -7,10 +7,10 @@ html.no-js
     if current.path[0] == 'comic'
         - var imagen = uri+"/comic/"+slug+".img/0.jpg";
         - var encoded = encodeURIComponent( imagen );
-        - var ogdata = {title: 'Surreal Comics - '+title, url: 'http://surrealcomics.org/comic/'+slug, image: 'http://imgsizer.8cdn.co/500/500/'+encoded, favicon: '/favicon.ico', description: 'Surreal Comics'};
+        - var ogdata = {title: 'Surreal Comics - '+title, url: 'http://www.surrealcomics.org/comic/'+slug, image: 'http://imgsizer.8cdn.co/500/500/'+encoded, favicon: '/favicon.ico', description: 'Surreal Comics'};
 
     else
-        - var ogdata = {title: 'Surreal Comics', url: 'http://surrealcomics.org/', image: 'http://www.surrealcomics.rg/touch-icon-ipad-retina.png', favicon: '/favicon.ico', description: 'Surreal Comics'};
+        - var ogdata = {title: 'Surreal Comics', url: 'http://www.surrealcomics.org/', image: 'http://www.surrealcomics.rg/touch-icon-ipad-retina.png', favicon: '/favicon.ico', description: 'Surreal Comics'};
 
     each val,key in ogdata 
         meta(property='og:'+key, content=val)

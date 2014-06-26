@@ -1,7 +1,6 @@
 La Mancha
 ===
 
-Qué puede pasar cuando nuestro deseo se hace realidad?
-Una pequeña mancha puede apoderarse de todo.
+Un genio de la genética piensa que sabe todo sobre la naturaleza, hasta que ve unos labios que cambian su mundo por completo, una mancha en medio de un mundo perfecto.
 
 Ilustrado por Andrea Lucio y escrito por OthrO

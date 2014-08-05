@@ -35,23 +35,23 @@ $(document).on('ready', function(){
 		$('#zoom-area .zoom-wrapper img').attr("src", full_img);
 		e.preventDefault();
 		$('#zoom-area').fadeIn( function(){
-			setTimeout(function(){
-				myScroll = new IScroll('.zoom-wrapper', {
-					zoom: true,
-					scrollX: true,
-					scrollY: true,
-					mouseWheel: true,
-					wheelAction: 'zoom'
-				});
-			}, 100 );
+			// setTimeout(function(){
+			// 	myScroll = new IScroll('.zoom-wrapper', {
+			// 		zoom: true,
+			// 		scrollX: true,
+			// 		scrollY: true,
+			// 		mouseWheel: true,
+			// 		wheelAction: 'zoom'
+			// 	});
+			// }, 100 );
 		});
 	});
 
 	$('.zoom-close').on( 'click', function(e){
 		e.preventDefault();
 		$('#zoom-area').fadeOut( function(){
-			myScroll.destroy();
-			myScroll = null;
+			// myScroll.destroy();
+			// myScroll = null;
 		});
 	});
 

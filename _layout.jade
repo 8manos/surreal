@@ -7,8 +7,8 @@ html.no-js
     if current.path[0] == 'comic'
         - var paginas = []; for( var i=0; i < pages; i++ ){ paginas.push( i ) };
 
-        each val,index in paginas
-            - var imagen = uri+"/comic/"+slug+".img/"+index+".jpg";
+        for( i = pages; i--; )
+            - var imagen = uri+"/comic/"+slug+".img/"+i+".jpg";
             meta(property='og:image', content=imagen)
         
         - var encoded = encodeURIComponent( imagen );

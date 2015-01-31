@@ -4,7 +4,7 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    secure: mW4lwuE30Jcsv97U1jRRqb8gpSDv+H/kXn8tY+4w/pesJyOuUjY+odmeAi18KCh5trXrWsqDOQVXb2fFmJV3pUWxcbolkE6xcJmsQqLV05XHsHRQRuKc3L2hAtPXi2FI5fOjoORjwTKYmC66/e13QAd7VwH9BGEV975QN3j+5lQ=
+    secure: q43dGZvPZWaebT667BOdQY5YdefchGewSykfKTp6gNTIxapgRaKASzMD2oIkfHqE9/H9JqqnhrWJpGd6ZXrFO6d8/n3rg7uFpDvGkYYV+I5CD9qcDy4wfvjJAXq1MtZiuXsVdhLnicT+0GwZ5G3OpkJ5qeXQ+mIF6NrYbIUBQNQ=
   app: surrealcomics
   on:
     repo: 8manos/surreal

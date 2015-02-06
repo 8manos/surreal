@@ -7,4 +7,4 @@ En un desierto infinito.
 Ilustrado por Tatiana Ríos y escrito por OthrO
 (2015)
 
-Más de Tatiana en [La Pirata](http://t-pirata.tumblr.com/).
+Más de Tatiana en [Soy Pirata](http://t-pirata.tumblr.com/).

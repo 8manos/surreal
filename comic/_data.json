@@ -17,17 +17,23 @@
     "proximo": "2015-02-12",
     "pages": 22
   },
+    "el-desierto-y-la-silueta": { 
+    "slug" : "el-desierto-y-la-silueta",
+    "title": "El Desierto y la Silueta",
+    "proximo": "2015-02-07",
+    "pages": 3
+  },
+    "sweet-dreams-cafe": { 
+    "slug" : "sweet-dreams-cafe",
+    "title": "Sweet Dreams Café",
+    "proximo": "2014-04-15",
+    "pages": 14
+  },
   "unas-largas": {
     "slug" : "unas-largas",
     "title": "Uñas Largas",
     "proximo": "2014-05-07",
     "pages": 5
-  },
-    "sweet-dreams-cafe": { 
-  	"slug" : "sweet-dreams-cafe",
-    "title": "Sweet Dreams Café",
-    "proximo": "2014-04-15",
-    "pages": 14
   },
     "somos-diferentes": {
     "slug" : "somos-diferentes",

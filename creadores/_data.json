@@ -1,11 +1,20 @@
 {
   "andrea": { 
     "name": "Andrea Lucio",
-    "resumen": "Ilustradora de La Mancha, Somos Diferentes y Principios Universales",
+    "resumen": "Ilustradora de La Mancha, Somos Diferentes y Todo comienza en algún momento",
     "email": "andrea@surrealcomics.org",
     "twitter": "Conntrax",
     "blog" : "http://ydijo.wordpress.com/",
     "img" : "andrea"
+  },
+  "camilo": { 
+    "name": "Camilo Aguirre",
+    "resumen": "Ilustrador de Uñas Largas",
+    "email": "camilo@surrealcomics.org",
+    "facebook": "cagva",
+    "blog" : "http://www.elgloboscopio.com",
+    "blog" : "http://ceavhistorietas.blogspot.com",
+    "img" : "camilo"
   },
   "erzebet": { 
     "name": "Erzebet Art",
@@ -28,14 +37,14 @@
     "facebook": "juliandavid.naranjomorales",
     "img" : "julian"
   },
-  "camilo": { 
-    "name": "Camilo Aguirre",
-    "resumen": "Ilustrador de Uñas Largas",
-    "email": "camilo@surrealcomics.org",
-    "facebook": "cagva",
-    "blog" : "http://www.elgloboscopio.com",
-    "blog" : "http://ceavhistorietas.blogspot.com",
-    "img" : "camilo"
+  "pirata": { 
+    "name": "Tatiana Ríos",
+    "resumen": "Ilustradora de El Desierto y la Silueta",
+    "email": "pirata@surrealcomics.org",
+    "facebook": "soyunapirata",
+    "twitter": "Una_Pirata",
+    "blog" : "http://t-pirata.tumblr.com/",
+    "img" : "pirata"
   },
   "othro": { 
     "name": "othro",

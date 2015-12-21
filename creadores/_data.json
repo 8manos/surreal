@@ -9,7 +9,7 @@
   },
   "camilo": { 
     "name": "Camilo Aguirre",
-    "resumen": "Ilustrador de Uñas Largas",
+    "resumen": "Ilustrador de El Oro es Silencio y Uñas Largas",
     "email": "camilo@surrealcomics.org",
     "facebook": "cagva",
     "blog" : "http://www.elgloboscopio.com",
@@ -20,7 +20,6 @@
     "name": "Erzebet Art",
     "resumen": "Ilustradora de Animal de Ciudad",
     "email": "erzebet@surrealcomics.org",
-    "facebook": "Erzebet.Art",
     "img" : "erzebet"
   },
     "felipe": { 
@@ -30,12 +29,27 @@
     "blog": "http://fillias84.blogspot.com",
     "img" : "felipe"
   },
+  "juandapo": { 
+    "name": "Juan Dapo",
+    "resumen": "Ilustrador de Monstruos",
+    "email": "juandapo@surrealcomics.org",
+    "blog": "http://http://es.whoandapo.com/",
+    "facebook": "DeberiaSerFestivo",
+    "img" : "juandapo"    
+  },
   "julian": { 
     "name": "Julián Naranjo",
-    "resumen": "Ilustrador de Sweet Dreams Café y Desde lo Profundo del Vacío",
+    "resumen": "Ilustrador de Sweet Dreams Café, Desde lo Profundo del Vacío y El Fin de la Humanidad",
     "email": "julian@surrealcomics.org",
     "facebook": "juliandavid.naranjomorales",
     "img" : "julian"
+  },
+  "midi": { 
+    "name": "MIDI",
+    "resumen": "Ilustrador de Como Moscas",
+    "email": "midi@surrealcomics.org",
+    "facebook": "abisal.colectivo",
+    "img" : "midi"    
   },
   "pirata": { 
     "name": "Tatiana Ríos",

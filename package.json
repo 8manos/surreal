@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "description": "Comics",
   "dependencies": {
-    "harp": "*"
+    "harp": "*",
+    "less": "^2.5.3"
   },
   "engines": {
     "node": "0.10.x",

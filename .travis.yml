@@ -8,3 +8,4 @@ deploy:
   app: surrealcomics
   on:
     repo: 8manos/surreal
+  skip_cleanup: true

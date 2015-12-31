@@ -1,14 +1,8 @@
 {
   "name": "surrealcomics",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "Comics",
   "dependencies": {
-    "harp": "*",
-    "less": "^2.5.3"
-  },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
+    "harp": "^0.20.1"
   }
 }

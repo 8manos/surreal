@@ -2,25 +2,25 @@
     "monstruos": {
     "slug" : "monstruos",
     "title": "Monstruos",
-    "proximo": "2015-07-19",
+    "proximo": "2016-01-17",
     "pages": 6
   },
     "el-oro-es-silencio": {
     "slug" : "el-oro-es-silencio",
     "title": "El Oro es Silencio",
-    "proximo": "2015-07-12",
-    "pages": 6
+    "proximo": "2016-01-27",
+    "pages": 7
   },
     "como-moscas": {
     "slug" : "como-moscas",
     "title": "Como Moscas",
-    "proximo": "2015-05-27",
+    "proximo": "2016-01-24",
     "pages": 6
   },
     "el-fin-de-la-humanidad": { 
     "slug" : "el-fin-de-la-humanidad",
     "title": "El Fin de la Humanidad",
-    "proximo": "2015-02-14",
+    "proximo": "2016-01-20",
     "pages": 6
   },
     "animal-de-ciudad": {

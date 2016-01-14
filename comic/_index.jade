@@ -5,8 +5,8 @@ article.comic(id=slug)
 
       each val,index in paginas
         li
-            a.zoom(href=slug+".img/"+index+".jpg")
-                - var imagen = uri+"/comic/"+slug+".img/"+index+".jpg";
+            a.zoom(href="http://img.surrealcomics.org/comic/"+slug+".img/"+index+".jpg")
+                - var imagen = "http://img.surrealcomics.org/comic/"+slug+".img/"+index+".jpg";
                 - var encoded = encodeURIComponent( imagen );
                 img.lazyOwl( data-src="http://imgsizer.8cdn.co/xx/yy/#{encoded}", data-imagen="#{imagen}" )
 
@@ -49,7 +49,7 @@ article.comic(id=slug)
 
         div.zoom-wrapper
             div.image-wrapper
-              img(src="http://placehold.it/500x900")
+              img(src="http://placehold.it/10x10")
 
               div#flechas
                 a#anterior(href="#") Anterior

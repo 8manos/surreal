@@ -1,7 +1,7 @@
 ul.grid
     for comic in public.comic._data
         li 
-            - var encoded = encodeURIComponent( uri+"/comic/"+comic.slug+".img/0.jpg" );
+            - var encoded = encodeURIComponent( "http://img.surrealcomics.org/comic/"+comic.slug+".img/0.jpg" );
             a.item(href="/comic/#{comic.slug}")
                 img(src="http://imgsizer.8cdn.co/600/1000/#{encoded}")
                 h2 #{comic.title}

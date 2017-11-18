@@ -6,7 +6,7 @@
     "node": "8.9.1"
   },
   "scripts": {
-    "test": "echo \"No test specified for surreal\" && exit 1"
+    "test": "echo \"No test specified for surreal\" && exit 0"
   },
   "dependencies": {
     "harp": "^0.24.1"

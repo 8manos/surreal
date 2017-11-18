@@ -3,12 +3,12 @@
   "version": "0.0.10",
   "description": "Comics",
   "engines": {
-    "node": "6.10.3"
+    "node": "8.9.1"
   },
   "scripts": {
     "test": "echo \"No test specified for surreal\" && exit 1"
   },
   "dependencies": {
-    "harp": "^0.20.1"
+    "harp": "^0.24.1"
   }
 }

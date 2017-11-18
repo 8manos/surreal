@@ -1,7 +1,10 @@
 {
   "name": "surrealcomics",
-  "version": "0.0.9",
+  "version": "0.1",
   "description": "Comics",
+  "engines": {
+    "node": "6.10.3"
+  }
   "scripts": {
     "test": "echo \"No test specified for surreal\" && exit 1"
   },

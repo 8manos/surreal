@@ -2,6 +2,9 @@
   "name": "surrealcomics",
   "version": "0.0.9",
   "description": "Comics",
+  "scripts": {
+    "test": "echo \"No test specified for surreal\" && exit 1"
+  },
   "dependencies": {
     "harp": "^0.20.1"
   }

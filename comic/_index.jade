@@ -8,7 +8,7 @@ article.comic(id=slug)
             a.zoom(href="http://img.surrealcomics.org/comic/"+slug+".img/"+index+".jpg")
                 - var imagen = "http://img.surrealcomics.org/comic/"+slug+".img/"+index+".jpg";
                 - var encoded = encodeURIComponent( imagen );
-                img.lazyOwl( data-src="http://imgsizer.herokuapp.com/xx/yy/#{encoded}", data-imagen="#{imagen}" )
+                img.lazyOwl( data-src="http://sizer.surrealcomics.org/xx/yy/#{encoded}", data-imagen="#{imagen}" )
 
       - var lanzamiento = new Date( proximo ).getTime();
       - var ahora       = new Date().getTime();
@@ -16,9 +16,9 @@ article.comic(id=slug)
       - var restante    = Math.ceil( falta/1000/60/60/24 );
 
       if restante > 0
-        
+
         li.coming-soon
-            h3 Espera la próxima publicación de<br /><strong>#{title}</strong><br />en 
+            h3 Espera la próxima publicación de<br /><strong>#{title}</strong><br />en
                 span= restante
                 case restante
                   when 1
@@ -29,9 +29,9 @@ article.comic(id=slug)
     .compartir
       ul.compartir-redes
         li
-          a.twitter.flaticon-social(href="http://twitter.com/surrealcomics", title="Twitter", onclick='window.open(\'https://twitter.com/share?url=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'share-dialog\', \'width=550,height=450\'); return false;') 
+          a.twitter.flaticon-social(href="http://twitter.com/surrealcomics", title="Twitter", onclick='window.open(\'https://twitter.com/share?url=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'share-dialog\', \'width=550,height=450\'); return false;')
         li
-          a.facebook.flaticon-facebook12(href="http://facebook.com/surrealcomics.org", title="Facebook", onclick='window.open(\'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'facebook-share-dialog\', \'width=626,height=436\'); return false;') 
+          a.facebook.flaticon-facebook12(href="http://facebook.com/surrealcomics.org", title="Facebook", onclick='window.open(\'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'facebook-share-dialog\', \'width=626,height=436\'); return false;')
         li
           a.tumblr(href="http://surrealcomics.tumblr.com", title="Tumblr", onclick='window.open(\'http://www.tumblr.com/share/link/?url=http%3A%2F%2Fsurrealcomics.org%2Fcomic%2F#{slug}\', \'share-dialog\', \'width=550,height=450\'); return false;')
             img(valign="bottom", style='border-width: 0;', src='/img/tumblr-logo1.png', width="32")
@@ -39,7 +39,7 @@ article.comic(id=slug)
           a(href="http://surrealcomics.mercadoshops.com.co", title="Tienda Surreal")
             img(valign="middle", style='border-width: 0;', src='/img/Logo Surreal.png', width="32")
 
-      h4 
+      h4
 
     .comic-description
         != yield
